@@ -32,7 +32,11 @@
         },
         "triggers": [
           {
-            "resourceName": "apigusEast1TestAPItestget",
+            "resourceName": "apigusEast1TestAPItest123get",
+            "config": {}
+          },
+          {
+            "resourceName": "apigusEast1TestAPItestpost",
             "config": {}
           }
         ]
@@ -72,8 +76,8 @@
           "proxyIntegration": false,
           "enableCORS": true,
           "stageMode": 1,
-          "stageName": "Test",
-          "stageDeploymentId": "g1r7rf",
+          "stageName": "dev",
+          "stageDeploymentId": "dlb09x",
           "mode": 1
         }
       },
@@ -108,6 +112,38 @@
           "stageDeploymentId": "kbvqhm",
           "mode": 1
         }
+      },
+      "apigusEast1TestAPItest123get": {
+        "name": "apigusEast1TestAPItest123get",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/hiru/test": "2b8zt0",
+            "/hiru": "3nc52b",
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/test123": "kw67fb",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/test123",
+          "resourceName": "test123",
+          "resourceId": "kw67fb",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": true,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "f15z2q",
+          "mode": 1
+        }
       }
     },
     "customTemplate": {
@@ -135,7 +171,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561366172803
+    "lastSave": 1561367374484
   },
   "VCS_STATE": {
     "provider": "GitHub",
