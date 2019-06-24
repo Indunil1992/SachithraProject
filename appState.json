@@ -1,0 +1,115 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "54bbd82c-526a-439a-bd8b-6164067e268e": {
+        "id": "54bbd82c-526a-439a-bd8b-6164067e268e",
+        "parent": null,
+        "name": "SachithraProject",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "8c4a1a89-8a65-45aa-b2bf-755c1c812992"
+        ],
+        "isRemovable": false,
+        "filePath": "SachithraProject"
+      },
+      "8c4a1a89-8a65-45aa-b2bf-755c1c812992": {
+        "id": "8c4a1a89-8a65-45aa-b2bf-755c1c812992",
+        "parent": "54bbd82c-526a-439a-bd8b-6164067e268e",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "SachithraProject/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPItestpost",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "54bbd82c-526a-439a-bd8b-6164067e268e",
+    "openFiles": [
+      "8c4a1a89-8a65-45aa-b2bf-755c1c812992"
+    ],
+    "currentFileId": "8c4a1a89-8a65-45aa-b2bf-755c1c812992",
+    "resources": {
+      "apigusEast1TestAPItestpost": {
+        "name": "apigusEast1TestAPItestpost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/hiru/test": "2b8zt0",
+            "/hiru": "3nc52b",
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/test123": "kw67fb",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/hiru/test",
+          "resourceName": "test",
+          "resourceId": "2b8zt0",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "2wwm10",
+          "mode": 1
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "SachithraProject",
+    "projectDescription": "pro1",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1561364736175
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "SachithraProject",
+      "url": "https://github.com/Indunil1992/SachithraProject"
+    }
+  }
+}
