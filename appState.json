@@ -32,7 +32,7 @@
         },
         "triggers": [
           {
-            "resourceName": "apigusEast1TestAPItestpost",
+            "resourceName": "apigusEast1TestAPItestget",
             "config": {}
           }
         ]
@@ -70,10 +70,42 @@
           "resourceId": "2b8zt0",
           "restMethod": "POST",
           "proxyIntegration": false,
-          "enableCORS": false,
+          "enableCORS": true,
           "stageMode": 1,
           "stageName": "Test",
-          "stageDeploymentId": "2wwm10",
+          "stageDeploymentId": "g1r7rf",
+          "mode": 1
+        }
+      },
+      "apigusEast1TestAPItestget": {
+        "name": "apigusEast1TestAPItestget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/hiru/test": "2b8zt0",
+            "/hiru": "3nc52b",
+            "/MyLambda": "98nqbj",
+            "/": "h2lelj6j7k",
+            "/test123": "kw67fb",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/hiru/test",
+          "resourceName": "test",
+          "resourceId": "2b8zt0",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": true,
+          "stageMode": 1,
+          "stageName": "Test",
+          "stageDeploymentId": "kbvqhm",
           "mode": 1
         }
       }
@@ -103,7 +135,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1561364736175
+    "lastSave": 1561366172803
   },
   "VCS_STATE": {
     "provider": "GitHub",
